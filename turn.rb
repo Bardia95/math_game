@@ -2,14 +2,14 @@ class Turn
   def initialize(current_player, waiting_player)
     @current_player = current_player
     @waiting_player = waiting_player
-    generate_random
+    generate_random_numbers
     begin_turn
     ask_question
     receive_input
     check_answer
   end
 
-  def generate_random
+  def generate_random_numbers
     @rand1 = rand(1..20)
     @rand2 = rand(1..20)
     @sum = @rand1 + @rand2
