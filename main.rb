@@ -2,10 +2,6 @@ require './turn'
 
 class Game
   def initialize
-    start_game
-  end
-
-  def start_game
     @player1 = {name: "Player 1", lives: 3}
     @player2 = {name: "Player 2", lives: 3}
     @current_player = @player1
@@ -21,7 +17,6 @@ class Game
       end
     end
   end
-
 end
 
 game1 = Game.new
